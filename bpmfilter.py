@@ -16,7 +16,7 @@ def collect_tracks_from_playlists(playlist_urls):
         playlist_id = playlist_url.split("/")[-1].split("?")[0]
         offset = 0
         total = 1  # Placeholder for the total number of tracks
-        print(playlist_url)
+        #print(playlist_url)
         while offset < total:
             tracks_playlist = sp.playlist_tracks(playlist_id, limit=limit, offset=offset)
             total = tracks_playlist['total']  # Total number of tracks in the playlist
